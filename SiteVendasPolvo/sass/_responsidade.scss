@@ -1,0 +1,103 @@
+@media (max-width: 1250px) {
+    .sobre {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .imgSobre {
+                justify-content: center;
+                width: 100%;
+                // background-color: red;
+
+                .lojaImg {
+                    width: 80%;
+                }
+
+            }
+
+            .conteudoSobre {
+                justify-content: center;
+                margin-top: 5vh;
+                width: 80%;
+                margin-top: 10vh;
+
+                .titleSobre {
+                    text-align: center;
+                    font-size: 2rem;
+                }
+
+                .textoSobre {
+                    margin-top: 2vh;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .produto {
+        .container {
+            justify-content: center;
+            align-items: center;
+            margin-top: 20vh;
+
+            .titleProduto {
+                text-align: center;
+                font-size: 2rem;
+                width: 80%;
+            }
+
+            .produtos {
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 5vh;
+                width: 100%;
+            }
+
+            article {
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 1vh;
+                width: 40%;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        .container {
+            flex-direction: column;
+            height: 15vh;
+
+            .titleHeader {
+                margin-top: 1vh;
+            }
+
+            nav {
+                ul {
+                    flex-direction: column;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+    .produto {
+        .container {
+            justify-content: center;
+            align-items: center;
+            margin-top: 20vh;
+
+            article {
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 1vh;
+                width: 50%;
+
+            }
+        }
+    }
+}

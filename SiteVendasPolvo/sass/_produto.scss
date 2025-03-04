@@ -1,0 +1,50 @@
+@import "./variaveis";
+
+.produto {
+    .container {
+        display: flex;
+        flex-direction: column;
+        // background-color: red;
+        margin-top: 5vh;
+
+        .titleProduto {
+            color: $color2;
+            border-bottom: 4px solid $color2;
+            line-height: 5vh;
+            margin-bottom: 5vh;
+            font-size: 2rem;
+        }
+
+        .produtos {
+            display: flex;
+            column-gap: 3vw;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            // background-color: blue;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            width: 20%;
+            // background-color: red;
+
+            .imgProduto {
+                width: 100%;
+                border: 1px solid #000;
+            }
+
+            button {
+                cursor: pointer;
+                padding: 0.5vh 0.5vw;
+                border-radius: 2%;
+                border: none;
+                color: $color;
+                background-color: $background;
+                font-size: 1.1rem;
+                margin-bottom: 5vh;
+            }
+        }
+    }
+}

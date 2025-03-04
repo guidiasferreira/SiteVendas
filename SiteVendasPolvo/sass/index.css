@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #3868d6;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  color: #fff;
+}
+header .container nav ul {
+  display: flex;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+header .container nav ul li {
+  list-style: none;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+header .container nav ul li a:hover {
+  border-bottom: 2px solid #000;
+}
+
+.sobre .container {
+  display: flex;
+  margin-top: 5vh;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+}
+.sobre .container .imgSobre {
+  display: flex;
+}
+.sobre .container .imgSobre .lojaImg {
+  width: 22vw;
+  border-radius: 2px;
+}
+.sobre .container .conteudoSobre {
+  display: flex;
+  flex-direction: column;
+}
+.sobre .container .conteudoSobre .titleSobre {
+  color: #3868d6;
+  border-bottom: 4px solid #3868d6;
+  line-height: 5vh;
+  font-size: 2rem;
+}
+.sobre .container .conteudoSobre .textoSobre {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+}
+
+.produto .container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+.produto .container .titleProduto {
+  color: #3868d6;
+  border-bottom: 4px solid #3868d6;
+  line-height: 5vh;
+  margin-bottom: 5vh;
+  font-size: 2rem;
+}
+.produto .container .produtos {
+  display: flex;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.produto .container article {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 20%;
+}
+.produto .container article .imgProduto {
+  width: 100%;
+  border: 1px solid #000;
+}
+.produto .container article button {
+  cursor: pointer;
+  padding: 0.5vh 0.5vw;
+  border-radius: 2%;
+  border: none;
+  color: #fff;
+  background-color: #3868d6;
+  font-size: 1.1rem;
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 1250px) {
+  .sobre .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre .container .imgSobre {
+    justify-content: center;
+    width: 100%;
+  }
+  .sobre .container .imgSobre .lojaImg {
+    width: 80%;
+  }
+  .sobre .container .conteudoSobre {
+    justify-content: center;
+    margin-top: 5vh;
+    width: 80%;
+    margin-top: 10vh;
+  }
+  .sobre .container .conteudoSobre .titleSobre {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .sobre .container .conteudoSobre .textoSobre {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+  }
+  .produto .container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+  }
+  .produto .container .titleProduto {
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+  }
+  .produto .container .produtos {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    width: 100%;
+  }
+  .produto .container article {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1vh;
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  header .container {
+    flex-direction: column;
+    height: 15vh;
+  }
+  header .container .titleHeader {
+    margin-top: 1vh;
+  }
+  header .container nav ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .produto .container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+  }
+  .produto .container article {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1vh;
+    width: 50%;
+  }
+}/*# sourceMappingURL=index.css.map */

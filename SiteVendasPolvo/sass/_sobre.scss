@@ -1,0 +1,37 @@
+@import "./variaveis";
+
+.sobre {
+    .container {
+        display: flex;
+        margin-top: 5vh;
+        column-gap: 3vw;
+        // background-color: rgb(138, 190, 108);
+
+        .imgSobre {
+            display: flex;
+
+            .lojaImg {
+                width: 22vw;
+                border-radius: 2px;
+            }
+        }
+
+        .conteudoSobre {
+            display: flex;
+            flex-direction: column;
+            // background-color: red;
+
+            .titleSobre {
+                color: $color2;
+                border-bottom: 4px solid $color2;
+                line-height: 5vh;
+                font-size: 2rem;
+            }
+
+            .textoSobre {
+                margin-top: 2vh;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
